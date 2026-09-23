@@ -4,8 +4,9 @@
 """
 
 from .clock import FakeClock
+from .errors import CapacityExceeded, LeaseError
 from .table import LeaseTable
 
-__all__ = ["LeaseTable", "FakeClock"]
+__all__ = ["LeaseTable", "FakeClock", "LeaseError", "CapacityExceeded"]
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
